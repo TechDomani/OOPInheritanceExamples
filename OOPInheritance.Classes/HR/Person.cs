@@ -32,7 +32,7 @@ namespace OOPInheritance.Classes.HR
 
         public virtual string Description()
         {
-            return $"Name:{Name} DateOfBirth:{DateOfBirth.ToString("dd/MM/yyyy")}";
+            return $"Name:{Name} DateOfBirth:{DateOfBirth:dd/MM/yyyy}";
         }
     }
 }

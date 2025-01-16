@@ -13,10 +13,10 @@ namespace OOPInheritance
 
         static void TestPeople()
         {
-            Person person = new Person("Joe Smith", new DateTime(2007, 12, 22));
+            Person person = new ("Joe Smith", new DateTime(2007, 12, 22));
             Console.WriteLine(person.Description());
 
-            Employee employee = new Employee("Jane Brown", new DateTime(2007, 12, 22), new DateTime(2019, 02, 13));
+            Employee employee = new ("Jane Brown", new DateTime(2007, 12, 22), new DateTime(2019, 02, 13));
             Console.WriteLine(employee.Description());
         }
 
@@ -27,7 +27,7 @@ namespace OOPInheritance
 
             SavingsAccount savingsAccount = new(600, new DateTime(2022, 01, 03), "Bugs Bunny", 0.01m);
 
-            List<BankAccount> bankAccounts = new List<BankAccount> { checkingAccount, savingsAccount };
+            List<BankAccount> bankAccounts = [ checkingAccount, savingsAccount ];
             foreach (BankAccount bankAccount in bankAccounts)
             {
 

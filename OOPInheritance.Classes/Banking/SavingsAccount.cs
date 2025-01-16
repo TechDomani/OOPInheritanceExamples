@@ -40,6 +40,7 @@ namespace OOPInheritance.Classes.Banking
             TimeSpan difference = DateTime.Today - _interestLastUpdated;
             decimal interest = difference.Days * (InterestRate / 365);
             Balance += interest;
+            _interestLastUpdated = DateTime.Today;
             return interest;
         }
     }
